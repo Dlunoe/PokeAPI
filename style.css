@@ -1,0 +1,80 @@
+body{
+    background: rgb(255,215,233);
+    background: linear-gradient(90deg, rgba(255,215,233,1) 0%, rgba(188,209,235,1) 100%);
+}
+h1{
+    text-align: center;
+    font-family: 'Press Start 2P'
+}
+.searchButton{
+    font-family: 'Press Start 2P'
+}
+.pageTop{
+    height:100px;
+    width:90%;
+    margin:auto;
+}
+
+form{
+    border:1px solid black;
+    max-width:30%;
+    display:inline-flex;
+}
+.team-container{
+    font-family: 'Press Start 2P';
+    max-width: 50%;
+    border: 1px solid black;
+    display: inline-flex;
+    float: right;
+}
+.mid-container{
+    max-width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+.searchList{
+    display:flex;
+    flex-direction:column;
+    width:30%;
+
+}
+.description{
+    border:1px solid black;
+    display:inline-flex;
+    float:right;
+    width:60%;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    background: rgb(63,70,251);
+    background: radial-gradient(circle, rgba(63,70,251,1) 44%, rgba(252,70,107,1) 100%);
+    /* https://cssgradient.io/ */
+}
+.sprite, .sprite2{
+    align-content:right;
+    height:100px;
+    float:right;
+}
+.name{
+    font-size: 12pt;
+    font-family: 'Press Start 2P';
+    height:20px;
+    width:100%;
+    text-align:center;
+}
+.type{
+    font-size:10pt;
+    font-family:'Press Start 2P';
+    float:right;
+    flex-direction:column;
+}
+.types{
+    align-self:auto;
+    padding:5px;
+}
+.flavorText{
+    font-size:14pt;
+    padding:5px;
+    border:1px dotted black;
+    width:100%;
+}
