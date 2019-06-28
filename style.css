@@ -44,6 +44,7 @@ form{
     display:inline-flex;
     float:right;
     width:60%;
+    height:400px;
     justify-content: space-around;
     flex-wrap:wrap;
     background: rgb(63,70,251);
@@ -63,10 +64,11 @@ form{
     text-align:center;
 }
 .type{
+    width:90%;
     font-size:10pt;
     font-family:'Press Start 2P';
-    float:right;
     flex-direction:column;
+    text-align: center;
 }
 .types{
     align-self:auto;
@@ -77,4 +79,18 @@ form{
     padding:5px;
     border:1px dotted black;
     width:100%;
+}
+.search{
+    padding:5px;
+    background-color:blue;
+    color:white;
+    /* font-family:'Press Start 2P';
+    font-size:8pt; */
+}
+.search:hover{
+    padding:10px;
+    background-color:white;
+    color:blue;
+    font-family:'Press Start 2P';
+    font-size:8pt;
 }
