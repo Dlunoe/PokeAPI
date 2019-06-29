@@ -10,6 +10,14 @@ function addTeam () {
         alert("Your party is full, please remove a pokemon to add more.")
     }
 }
+$('.addToTeam').click(function(){
+    addTeam();
+})
+$('.team-container').on("click", function(){
+    console.log(this)
+    $(event.target).remove();
+    teamCount--;
+})
 $('form').on("submit",function(){
     event.preventDefault();
     $('.searchResults').empty();
@@ -56,10 +64,8 @@ $('form').on("submit",function(){
                                         if(data.types[1].type.name!==undefined){
                                         $('.types').append(`<li>${data.types[1].type.name}</li>`)
                                         }
-                                    $('.addButton').append('<input type="button" class="addToTeam" value="Add to my team"></input>')
-                                    $('.addToTeam').click(function(){
-                                        addTeam();
-                                    })
+                                    
+                                    
                                 },
                                 error:()=>{
                                     console.log("bad request")
@@ -113,10 +119,8 @@ $('form').on("submit",function(){
                                         if(data.types[1].type.name!==undefined){
                                         $('.types').append(`<li>${data.types[1].type.name}</li>`)
                                         }
-                                    $('.addButton').append('<input type="button" class="addToTeam" value="Add to my team"></input>')
-                                    $('.addToTeam').click(function(){
-                                        addTeam();
-                                    })
+                                    
+                                   
                                 },
                                 error:()=>{
                                     console.log("bad request")
@@ -163,10 +167,7 @@ $('form').on("submit",function(){
                                 if(data.types[1].type.name!==undefined){
                                 $('.types').append(`<li>${data.types[1].type.name}</li>`)
                                 }
-                            $('.addButton').append('<input type="button" class="addToTeam" value="Add to my team"></input>')
-                            $('.addToTeam').click(function(){
-                                addTeam();
-                            })
+                            
                         },
                         error:()=>{
                             console.log("bad request")
@@ -215,10 +216,8 @@ $('form').on("submit",function(){
                 if(data.types[1].type.name!==undefined){
                 $('.types').append(`<li>${data.types[1].type.name}</li>`)
                 }
-            $('.addButton').append('<input type="button" class="addToTeam" value="Add to my team"></input>')
-            $('.addToTeam').click(function(){
-                addTeam();
-            })
+           
+           
         },
         error:()=>{
             console.log("bad request")
