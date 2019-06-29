@@ -39,7 +39,7 @@ $('.searchButton').on("click",function(){
                                 if(data.types[1].type.name!==undefined){
                                 $('.types').append(`<li>${data.types[1].type.name}</li>`)
                                 }
-                
+                            $('.addButton').append(`<input type="button" class="addToTeam"></input>`)
                         },
                         error:()=>{
                             console.log("bad request")
@@ -88,7 +88,7 @@ $('.searchButton').on("click",function(){
                 if(data.types[1].type.name!==undefined){
                 $('.types').append(`<li>${data.types[1].type.name}</li>`)
                 }
-
+            $('.addButton').append(`<input type="button" class="addToTeam"></input>`)
         },
         error:()=>{
             console.log("bad request")
