@@ -10,13 +10,13 @@ h1{
     font-family: 'Press Start 2P'
 }
 .pageTop{
+    margin:00 5% 0 5%;
     height:100px;
     max-height:100px;
     width:90%;
-    margin:auto;
     display:inline-block;
     white-space: nowrap;
-    padding-bottom: 5%;
+ 
 }
 
 form{
@@ -28,17 +28,17 @@ form{
     font-family: 'Press Start 2P';
     max-width: 80%;
     max-height:100px;
-    border: 1px solid black;
     display: inline-flex;
     float: right;
     overflow-x: scroll;
+    border: 2px solid red;
+    outline: 2px solid black;
 }
 .mid-container{
     max-width:90%;
     margin:auto;
     display:flex;
     justify-content: space-between;
-    padding-top: 5%;
 }
 .searchList{
     display:flex;
@@ -47,7 +47,8 @@ form{
 
 }
 .description{
-    border:1px solid black;
+    border:2px solid blue;
+    outline:2px solid black;
     display:inline-flex;
     float:right;
     width:60%;
@@ -55,6 +56,7 @@ form{
     justify-content: space-around;
     flex-wrap:wrap;
     overflow-x:scroll;
+    margin: auto;
     background: rgb(63,70,251);
     background: radial-gradient(circle, rgba(63,70,251,1) 44%, rgba(252,70,107,1) 100%);
     /* https://cssgradient.io/ */
@@ -88,9 +90,9 @@ form{
     border:1px dotted black;
     width:100%;
 }
-.search{
+.search, .addToTeam{
     padding:5px;
-    background-color:blue;
+    background-color:black;
     color:white;
     font-family:'Press Start 2P';
     font-size:8pt;
