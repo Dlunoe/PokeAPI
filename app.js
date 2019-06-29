@@ -94,8 +94,8 @@ $('form').on("submit",function(){
                         })
             })
             $('.previousButton').on("click", function(e){
+                if(pageNumber>1){
                 $('.searchResults li').empty();
-               
                 pageNumber--;
                //clicking next will bring up the previous 20 results
                 for(i=(pageNumber-1)*20;i<((pageNumber-1)*20+20)+1;i++){                   
@@ -147,6 +147,7 @@ $('form').on("submit",function(){
                         
         
                        })
+                    }
             })
             //same code as seaching for a name, but uses the button to input a name instead of a search box.
             $('.search').on("click", function(e){
