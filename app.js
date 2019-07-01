@@ -36,7 +36,8 @@ $('form').on("submit",function(){
             for(i=0;i<20;i++){
             
             $('.searchResults').append(`<li><input type="button" class="search" value="${pokemon[i].pokemon.name}"></input></li>`)
-            }
+            $('.search').addClass(`${searchFor}`)
+        }
             
             $('.nextButton').on("click", function(e){
                 $('.searchResults li').empty();
@@ -101,6 +102,7 @@ $('form').on("submit",function(){
                 for(i=(pageNumber-1)*20;i<((pageNumber-1)*20+20)+1;i++){                   
                     $('.searchResults').append(`<li><input type="button" class="search" value="${pokemon[i].pokemon.name}"></input></li>`)
                     }
+                   
                        $('.search').on("click", function(e){
                         event.preventDefault();
                         console.log(this)
